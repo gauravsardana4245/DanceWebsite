@@ -1,0 +1,43 @@
+extends base.pug
+
+block style 
+    style
+        include ../static/style.css
+block scripts
+    script(src='../static/index.js')
+block content   
+    section#introsection
+        div Welcome to Gaurav's Dance Academy
+        div.small Eat Sleep Dance Repeat
+
+    section#missionsection
+        h2 Our Mission
+        div.card 
+            h3 Dance Perfection
+            div.card-box
+                div.card-img
+                    img(src='../static/img/6.png')
+                div.card-content
+                    p This is the best academy of this universe
+        div.card 
+            h3 Dance the way you like
+            div.card-box
+                div.card-img
+                    img(src='../static/img/7.png')
+                div.card-content
+                    p This is the best academy of this universe
+        div.card 
+            h3 Expert Teaching
+            div.card-box
+                div.card-img
+                    img(src='../static/img/8.png')
+                div.card-content
+                    p This is the best academy of this universe
+
+    section#sponsorsection
+        h2 Our sponsors
+        div#sponsors
+            img(src="../static/img/logo1.png", alt="sponsor image" class="spImage")
+            img(src="../static/img/logo2.png", alt="sponsor image" class="spImage")
+            img(src="../static/img/logo3.png", alt="sponsor image" class="spImage")
+            img(src="../static/img/logo4.png", alt="sponsor image" class="spImage")
