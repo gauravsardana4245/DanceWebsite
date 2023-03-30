@@ -1,155 +1,181 @@
-@import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Gemunu+Libre:wght@300&family=Lobster&family=Sonsie+One&family=Ubuntu:wght@300&family=ZCOOL+QingKe+HuangYou&display=swap');
-*{
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Gemunu+Libre:wght@300&family=Lobster&family=Sonsie+One&family=Ubuntu:wght@300&family=ZCOOL+QingKe+HuangYou&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
 }
 
 #navbar {
-    
-    background-color: #ff5b5b;
-    padding: 12px 13px;
-    font-family: 'Gemunu Libre', sans-serif;
-    
+  background-color: black;
+  color: white;
+  padding: 12px 13px;
+  font-family: "Gemunu Libre", sans-serif;
+  display: flex;
+  justify-content: flex-start;
 }
+
 #logo {
-    font-size: 22px;
-    display: flex;
-    align-items: center;
-    /* color: white; */
-    filter: invert(1);
-    margin-right: 16px;
-    margin-left: 4px;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  /* color: white; */
+  /* margin-right: 16px; */
+  margin-left: 10px;
 }
+
 #logo img {
-    height: 60px;
+  height: 60px;
+  margin-right: 4px;
+  filter: invert(1);
 }
-#navbar ul{
-    display: flex;
-    flex-direction: row;
-    /* justify-content: center; */
-    align-items: center;
-}
-#navbar ul li a{
-    text-decoration: none;
-    padding: 12px 13px;
-    color: white;
-    font-size: 23px;
-    
+/* #navbar p {
+  font-size: 30px;
+} */
 
-}
-#navbar ul li a:hover{
-    color: black;
-    font-size: 22px;
-    
-
-}
-#navbar ul li{
-    list-style: none;
-
-}
-#introsection{
-    background: center / cover no-repeat url('../static/bg.jpg');
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-    background-color: red;
-    height: 354px;
-    color: white;
-
-font-family: 'ZCOOL QingKe HuangYou';
-
+#navbar ul {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  align-items: center;
 }
 
-#introsection div{
-    font-size: 44px;
+#navbar ul li a {
+  text-decoration: none;
+  padding: 12px 13px;
+  color: white;
+  font-size: 23px;
 }
-#introsection div.small{
-    font-size: 29px;
+
+#head {
+  font-size: 30px;
 }
+
+#navbar ul li a:hover {
+  color: rgb(153, 153, 153);
+  /* font-size: 22px; */
+}
+
+#navbar ul li {
+  list-style: none;
+}
+
+/* intro-section */
+#introsection {
+  background: center / cover no-repeat url("../static/img/dance-bg.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: red;
+  height: 600px;
+  color: white;
+
+  font-family: "ZCOOL QingKe HuangYou";
+}
+
+#introsection div {
+  font-size: 44px;
+}
+
+#introsection div.small {
+  font-size: 29px;
+}
+
+/* mission-section */
 #missionsection {
-    /* display: flex;
+  /* display: flex;
     flex-direction: column;
     justify-content: center; */
-    height: 320px;
-    margin: auto;
+  height: 320px;
+  margin: auto;
+  background-color: black;
+  color: white;
 }
-#missionsection h2{
-    text-align: center;
-    padding: 12px 13px;
-    
 
-
+#missionsection h2 {
+  text-align: center;
+  padding: 12px 13px;
+  font-size: 26px;
+  margin-bottom: 4px;
 }
-#missionsection div.card{
-    width: 30%;
-    border: 2px solid black;
-    margin: 2px 22px;
-    height: 238px;
-    border-radius: 14px;
-    display: inline-block;
-    background-color: #fffbfb;;
 
+#missionsection div.card {
+  width: 30%;
+  border: 2px solid black;
+  margin: 2px 22px;
+  height: 238px;
+  border-radius: 14px;
+  display: inline-block;
+  background-color: #fffbfb;
+  transition: background 0.5s, transform 0.5s;
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  cursor: pointer;
+}
+#missionsection div.card:hover {
+  background-color: red;
+  /* background: linear-gradient(to bottom, #660033 0%, #ff0000 100%); */
+  transform: translateY(-10px);
+}
+#missionsection div.card h3 {
+  text-align: center;
+  margin-top: 16px;
+}
 
-}
-#missionsection div.card h3{
-    text-align: center;
-    margin-top: 16px;
-    
-}
 .card-box {
-    display: flex;
-    align-items: center;
-
+  display: flex;
+  align-items: center;
 }
-.card-img{
-    height: 100px;
-    margin: 50px 19px;
-    display: inline-block;
 
+.card-img {
+  height: 100px;
+  margin: 50px 19px;
+  display: inline-block;
+  filter: invert(1);
 }
+
 .card-content {
-    display: inline-block;
+  display: inline-block;
+  font-size: 16px;
 }
-    
 
-.card-img img{
-    height: inherit;
+.card-img img {
+  height: inherit;
 }
-#sponsorsection{
-    height: 300px;
-    background-color: #ffecec;
 
-
+/* sponsor-section */
+#sponsorsection {
+  height: 300px;
+  background-color: #ffecec;
+  /* background-color: black; */
 }
-#sponsorsection h2{
-    text-align: center;
-    padding-top: 14px;
 
-
+#sponsorsection h2 {
+  text-align: center;
+  padding-top: 14px;
+  font-size: 26px;
 }
+
 #sponsors {
-    height: 220px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.spImage{
-    height: 50%;
-    /* margin: auto; */
-    display: inline-block;
-    padding: 0px 30px;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-#footer{
-    height: 60px;
-    background-color: black;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.spImage {
+  height: 50%;
+  /* margin: auto; */
+  display: inline-block;
+}
 
+#footer {
+  height: 60px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -1,0 +1,11 @@
+.about {
+  height: 80vh;
+  background: linear-gradient(to bottom, #cc3399 0%, #ff3300 100%);
+  padding: 20px 24px;
+}
+.about h2 {
+}
+.about p {
+  padding: 16px 0px;
+  font-size: 20px;
+}
